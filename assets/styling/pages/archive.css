@@ -1,0 +1,74 @@
+/* Archive section */
+.archive {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  min-height: calc(100vh - 10rem);
+  width: 100%;
+  max-width: 100rem;
+}
+
+/* Archive section wrapper */
+.archive__wrapper {
+  width: 100%;
+  padding-top: 10rem;
+}
+
+/* Archive title */
+.archive__title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ccd6eb;
+}
+
+/* Archive subtitle */
+.archive__subtitle {
+  color: #1aa5ef;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 2rem;
+}
+
+/* Archive table container */
+.archive__table {
+  margin-top: 10rem;
+}
+
+@media only screen and (min-width: 576px) {
+  /* Making the title bigger */
+  .archive__title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Making the title bigger */
+  .archive__title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Making the title bigger */
+  .archive__title {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Making the title bigger */
+  .archive__title {
+    font-size: 8rem;
+  }
+}
+/*# sourceMappingURL=archive.css.map */

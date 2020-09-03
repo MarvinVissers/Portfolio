@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <!-- Meta tags, information for the browser -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Hallo, ik ben Marvin Vissers en dit is mijn website. Ik ben een Informatica student op de Associate Degree Academie.">
+        <meta name="keywords" content="Marvin, Vissers, Marvin Vissers, Student, Student Informatica, Informatica, ICT, Front-end, Back-end, Full Stack">
+        <meta name="author" content="Marvin Vissers">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Marvin Vissers | Student Informatica</title>
+
+        <!--Preloading all important things-->
+        <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style">
+        <link rel="preload" href="assets/styling/main.css" as="style">
+        <link rel="preload" href="assets/styling/pages/home.css" as="style">
+
+        <!-- Linking to materialize CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+        <!-- Linking to own CSS -->
+        <link rel="stylesheet" href="assets/styling/main.css">
+        <link rel="stylesheet" href="assets/styling/pages/home.css">
+
+        <!-- linking to favicon -->
+        <link rel="icon" href="assets/images/favicon.png">
+
+        <!--Linking to custom font Roboto and Roboto Mono -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+        <!-- Linking to icons -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <div class="container-fluid">
+                <nav class="navbar">
+                    <!-- Hamburger menu -->
+                    <div class="navbar__handler" onclick="toggleMobileNavbar()">
+                        <span class="navbar--bar" id="navbar1"></span>
+                        <span class="navbar--bar" id="navbar2"></span>
+                        <span class="navbar--bar" id="navbar3"></span>
+                    </div>
+
+                    <div class="mobile__wrapper" id="mobile-navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item"><a href="#over-mij" class="navbar--link">Over mij</a></li>
+                            <li class="navbar__item"><a href="#werk" class="navbar--link">Ervaring</a></li>
+                            <li class="navbar__item"><a href="#projecten" class="navbar--link">Werk</a></li>
+                            <li class="navbar__item"><a href="#contact" class="navbar--link">Contact</a></li>
+                            <li class="navbar__item" id="navbar-item-cv-link"><a href="assets/uploads/CV_Marvin_Vissers.pdf" id="cv-link" class="navbar--link" target="_blank" rel="noopener noreferrer">CV</a></li>
+                        </ul>
+
+                        <!-- Closing button mobile navbar -->
+                        <span class="navbar__close" onclick="toggleMobileNavbar()">&times;</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <article class="content">
+                <section class="hero section--fade-in" id="hero">
+                    <div class="hero__wrapper">
+                        <h1 class="hero__start">Hee, ik ben </h1>
+                        <h2 class="hero__name">Marvin Vissers.</h2>
+                        <h3 class="hero__subtitle">Ik maak graag websites.</h3>
+    
+                        <p class="hero__introduction">
+                            Ik studeer Informatica aan de AD Academie Roosendaal. Ik kan websites, Androids apps en Windows programma's maken.
+                        </p>
+    
+                        <a href="mailto:vissers2000@gmail.com" class="hero__contact">Contact opnemen</a>
+                    </div>
+                </section>
+        
+                <section class="about section--fade-in" id="over-mij">
+                    <div class="about__wrapper">
+                        <div class="about__left">
+                            <h3 class="about__title counter--title">Over mij</h3>
+
+                            <p class="about__text">
+                                Hallo! Ik ben Marvin, een Informatica student uit Zevenbergen.
+                            </p>
+        
+                            <p class="about__text">
+                                Ik maak graag websites in mijn vrije tijd of ik probeer nieuwe queries uit in een databases. Hierbij probeer ik altijd nieuwe functies of technieken uit.
+                            </p>
+        
+                            <p class="about__text">
+                                Nadat ik geslaagd was voor mijn MBO applicatie- en mediaontwikkelaar ben ik begonnen aan de Informatica opleiding bij <a href="https://www.ad-academie.nl/" class="about--link" target="_blank" rel="nofollow noopener noreferrer">AD Academie Roosendaal</a>. Daarnaast werk ik bij <a href="https://blokweg.nl/" class="about--link" target="_blank" rel="nofollow noopener noreferrer">Blokweg Financieel Adviseurs B.V.</a> op de ICT afdeling.
+                            </p>
+        
+                            <p class="about__text">
+                                Met deze technieken werk ik regelmatig: 
+                            </p>
+        
+                            <ul class="technologie__list">
+                                <li class="technologie__item">Java</li>
+                                <li class="technologie__item">HTML & (S)CSS</li>
+                                <li class="technologie__item">PHP</li>
+                                <li class="technologie__item">(My)SQL</li>
+                                <li class="technologie__item">JavaScript</li>
+                                <li class="technologie__item">Wordpress</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__right">
+                            <a href="https://github.com/MarvinVissers" class="overlay__link" target="_blank" rel="noopener noreferrer">
+                                <picture>
+                                    <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jpg">
+                                    <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg">
+                                    <img src="assets/images/MarvinVissers202.jpg" class="overlink__img" alt="Fotootje van mij">
+                                </picture>
+                                <div class="overlay--filter"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="work section--fade-in" id="werk">
+                    <div class="work__wrapper">
+                        <h3 class="work__title counter--title">Waar ik gewerkt heb</h3>
+
+                        <div class="work__tabs">
+                            <ul class="work__list" role="tablist">
+                                <li class="work__item"><button class="work__button" id="tab-0" role="tab" tabindex="-1" onclick="openWorkPanel(0)">AD Academie</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-1" role="tab" tabindex="-1" onclick="openWorkPanel(1)">Blokweg</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-2" role="tab" tabindex="-1" onclick="openWorkPanel(2)">Stage Monkeys and Bananas</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-3" role="tab" tabindex="-1" onclick="openWorkPanel(3)">V.V. Virtus</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-4" role="tab" tabindex="-1" onclick="openWorkPanel(4)">Stage Blokweg</button></li>
+                                <!-- <li class="work__item"><button class="work__button" id="tab-5" role="tab" tabindex="-1" onclick="openWorkPanel(5)">Able2</button></li> -->
+                                <span id="item-active"></span>
+                                <span id="item-active-mobile"></span>
+                            </ul>
+
+                            <div class="work__panel panel--active" id="workpanel0">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Promo student</span> <span class="panel--business">@ Associate degree Academie Roosendaal</span></h4>
+                                    <h5 class="panel__time">okt. 2019 - heden</h5>
+                                        
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Helpen bij open avonden en opleidingsbeursen.</li>
+                                        <li class="panel__item">Voorlichten geven op middelbare scholen.</li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="work__panel" id="workpanel1">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Medewerker ICT-afdeling</span> <span class="panel--business">@ Blokweg Financieel Adviseurs B.V.</span></h4>
+                                    <h5 class="panel__time">jul. 2018 - heden</h5>
+                                        
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Websites testen van onder andere occassionvoorraad.nl, deautofinancier.nl en blokweg.nl. </li>
+                                        <li class="panel__item">Collega's helpen met hardware en software problemen. </li>
+                                        <li class="panel__item">Programmeren van interne toepassingen. </li>
+                                        <li class="panel__item">Schrijven voor handleidingen van software en hardware. </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="work__panel" id="workpanel2">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Stage Webmonkey</span> <span class="panel--business">@ Monkeys and Bananas</span></h4>
+                                    <h5 class="panel__time">jan. 2019 - mei 2019</h5>
+                                        
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Websites maken in Wordpress met thema's van Bridge en Divi</li>
+                                        <li class="panel__item">Websites opleveren aan klanten. </li>
+                                        <li class="panel__item">Bestaande websites onderhouden. </li>
+                                        <li class="panel__item">Plugins schrijven voor Wordpress websites. </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="work__panel" id="workpanel3">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Vrijwilleger Applicatie beheerder</span> <span class="panel--business">@ V.V. Virtus</span></h4>
+                                    <h5 class="panel__time">okt. 2017 - sep. 2019</h5>    
+
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Onderhouden van de website. </li>
+                                        <li class="panel__item">Microsoft Power Point presentaties maken voor in de kantine. </li>
+                                        <li class="panel__item">Feedback geven over de website. </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="work__panel" id="workpanel4">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>ICT-afdeling</span> <span class="panel--business">@ Blokweg Financieel Adviseurs B.V.</span></h4>
+                                    <h5 class="panel__time">aug. 2017 - jan. 2018</h5>    
+
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Meehelpen met ontwikkelen van occassionvoorraad.nl. </li>
+                                        <li class="panel__item">Collega's helpen met hardware en software problemen. </li>
+                                        <li class="panel__item">Schrijven van handleidingen voor software en hardware. </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <!-- <div class="work__panel" id="workpanel5">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Magazijn Medewerker</span> <span class="panel--business">@ Able2</span></h4>
+                                    <h5 class="panel__time">mei. 2015 - sep. 2018</h5>    
+
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Orders klaargezet en ingepakt voor klanten. </li>
+                                        <li class="panel__item">Voorraden tellen. </li>
+                                        <li class="panel__item">Inkomende orders controleren. </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="projects section--fade-in" id="projecten">
+                    <div class="projects__wrapper">
+                        <h3 class="projects__title counter--title">Gemaakte projecten</h3>
+
+                        <!-- Featured project 1 - Brandweer Inside -->
+                        <div class="project__featured">
+                            <div class="project__information">
+                                <h4 class="project__status">Featured project</h4>
+
+                                <h5 class="project__title"><a href="https://github.com/MarvinVissers/BrandweerInside" target="_blank" rel="noopener noreferrer">Brandweer Inside</a></h5>
+
+                                <p class="project__discription">
+                                    Een project die ik gemaakt heb tijdens mijn opleiding Informatica. Op deze applicatie kan de brandweer inzicht krijgen over hoeveel personeel ze hebben en of er een tekort is.
+                                </p>
+
+                                <ul class="project-technologie">
+                                    <li class="project-technologie__item">Java</li>
+                                    <li class="project-technologie__item">MySQL</li>
+                                    <li class="project-technologie__item">JSON</li>
+                                    <li class="project-technologie__item">API Overheid</li>
+                                </ul>
+
+                                <div class="project__links">
+                                    <a href="https://github.com/MarvinVissers/BrandweerInside" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github project--icon"></i></a>
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/MarvinVissers/BrandweerInside" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
+                                <div class="project__img-wrapper">
+                                    <picture>
+                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.png">
+                                        <img src="assets/images/brandweer-inside1076X522.png" class="project__img" alt="Foto van project Brandweer Inside">
+                                    </picture>
+                                    <div class="project__overlay" id="picture-project1"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Featured project 2 - Presser -->
+                        <div class="project__featured">
+                            <div class="project__information">
+                                <h4 class="project__status">Featured project</h4>
+
+                                <h5 class="project__title"><a href="https://www.presser.nl/" target="_blank" rel="noopener noreferrer">Presser</a></h5>
+
+                                <p class="project__discription">
+                                    Website voor Tonny Presser fotografie die ik heb gemaakt tijdens mijn stage bij Monkeys and Bananas.
+                                </p>
+
+                                <ul class="project-technologie">
+                                    <li class="project-technologie__item">Wordpress</li>
+                                    <li class="project-technologie__item">JavaScript</li>
+                                    <li class="project-technologie__item">CSS</li>
+                                </ul>
+
+                                <div class="project__links">
+                                    <a href="https://www.presser.nl/" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt project--icon"></i></a>
+                                </div>
+                            </div>
+
+                            <a href="https://www.presser.nl/" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
+                                <div class="project__img-wrapper">
+                                    <picture>
+                                        <source media="(min-width:1000px)" srcset="assets/images/presser1349X666.png">
+                                        <img src="assets/images/presser1349X666.png" class="project__img" alt="Foto van werk pagina presser.nl">
+                                    </picture>
+                                    <div class="project__overlay" id="picture-project2"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Featured project 3 - Onboarding -->
+                        <div class="project__featured">
+                            <div class="project__information">
+                                <h4 class="project__status">Featured project</h4>
+
+                                <h5 class="project__title"><a href="https://github.com/MrDutchie00/onBoarding" target="_blank" rel="noopener noreferrer">Onboarding app</a></h5>
+
+                                <p class="project__discription">
+                                    Een app om studenten kennis te laten maken met het Associate degree Academie Roosendaal. In de app worden gegevens van de student uit een API gehaald die zelf geschreven is. 
+                                </p>
+
+                                <ul class="project-technologie">
+                                    <li class="project-technologie__item">Android</li>
+                                    <li class="project-technologie__item">Java</li>
+                                    <li class="project-technologie__item">PHP API</li>
+                                    <li class="project-technologie__item">MySQL</li>
+                                </ul>
+
+                                <div class="project__links">
+                                    <a href="https://github.com/MrDutchie00/onBoarding" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github project--icon"></i></a>
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/MrDutchie00/onBoarding" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
+                                <div class="project__img-wrapper">
+                                    <picture>
+                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.png">
+                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.png">
+                                        <img src="assets/images/onboarding700X394.png" class="project__img" alt="Foto van de onboarding app. Op de foto zijn de ontdek Roosendaal scherm en Feedback pagina te zien.">
+                                    </picture>
+                                    <div class="project__overlay" id="picture-project3"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="extra-projects section--fade-in" id="extra-projects">
+                    <div class="extra-projects__wrapper">
+                        <h4 class="extra-projects__title">Andere projecten</h4>
+
+                        <a href="archive" class="extra-projects__link">Bekijk het archief</a>
+
+                        <div class="projects-grid">
+                            <div class="projects-grid__item">
+                                <div class="projects-grid__wrapper">
+                                    <header>
+                                        <div class="projects-grid__header">
+                                            <div class="projects-grid__map-icon"><i class="far fa-folder-open projects-grid--icon"></i></div>
+                                            <div class="projects-grid__links"><a href="https://ak-business.nl/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt projects-grid--icon"></i></a></div>
+                                        </div>
+
+                                        <h5 class="projects-grid__title">Webshop AK Business</h5>
+
+                                        <p class="projects-grid__description">Een webshop gemaakt met WooCommerce en Wordpress. Deze website is gemaakt tijdens mijn stage bij Monkeys and Bananas.</p>
+                                    </header>
+
+                                    <footer class="projects-grid__footer">
+                                        <ul class="projects-grid__list">
+                                            <li class="projects-grid__list-item">Wordpress</li>
+                                            <li class="projects-grid__list-item">Webshop</li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </div>
+
+                            <div class="projects-grid__item">
+                                <div class="projects-grid__wrapper">
+                                    <header>
+                                        <div class="projects-grid__header">
+                                            <div class="projects-grid__map-icon"><i class="far fa-folder-open projects-grid--icon"></i></div>
+                                            <div class="projects-grid__links"><a href="https://pmc-heusdenhout.nl/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt projects-grid--icon"></i></a></div>
+                                        </div>
+
+                                        <h5 class="projects-grid__title">Website PMC Heusdenhout</h5>
+
+                                        <p class="projects-grid__description">Website voor PMC Heusdenhout gemaakt met Wordpress tijdens mijn stage bij Monkeys and Bananas.</p>
+                                    </header>
+
+                                    <footer class="projects-grid__footer">
+                                        <ul class="projects-grid__list">
+                                            <li class="projects-grid__list-item">Wordpress</li>
+                                            <li class="projects-grid__list-item">CSS</li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </div>
+
+                            <div class="projects-grid__item">
+                                <div class="projects-grid__wrapper">
+                                    <header>
+                                        <div class="projects-grid__header">
+                                            <div class="projects-grid__map-icon"><i class="far fa-folder-open projects-grid--icon"></i></div>
+                                            <div class="projects-grid__links"><a href="https://github.com/StickFunFight/AssistRecruitment" target="_blank" rel="noopener noreferrer"><i class="fab fa-github projects-grid--icon"></i></a></div>
+                                        </div>
+
+                                        <h5 class="projects-grid__title">Website Assist Recruitment</h5>
+
+                                        <p class="projects-grid__description">Website voor Assist Recruitment waarop bedrijven scans konden maken, delen en resultaten van kunnen zien. </p>
+                                    </header>
+
+                                    <footer class="projects-grid__footer">
+                                        <ul class="projects-grid__list">
+                                            <li class="projects-grid__list-item">PHP</li>
+                                            <li class="projects-grid__list-item">MySQL</li>
+                                            <li class="projects-grid__list-item">JavaScript</li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="contact section--fade-in" id="contact">
+                    <div class="contact__wrapper">
+                        <h3 class="contact__title counter--title">Wat nu?</h3>
+                        <h4 class="contact__subtitle">Neem contact op</h4>
+    
+                        <p class="contact__text">
+                            Ik ben op dit moment bezig aan het laaste jaar van mijn opleiding en ben op zoek naar een afstudeerstage. Tijdens deze stage is het de bedoeling dat ik met een projectteam meeloop. Deze stage is van eind januari tot en met eind juni.
+                        </p>
+    
+                        <a href="mailto:vissers2000@gmail.com" class="contact__link">Zeg hallo</a>
+                    </div>
+                </section>
+            </article>
+
+            <section class="socials sidebar--fade-in">
+                <ul class="socials__list">
+                    <li class="socials__item"><a href="https://github.com/MarvinVissers" class="socials--link"><i class="fab fa-github socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://www.linkedin.com/in/marvinvissers/" class="socials--link"><i class="fab fa-linkedin-in socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://codepen.io/marvinvissers" class="socials--link"><i class="fab fa-codepen socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://stackoverflow.com/users/11852362/marvinvissers" class="socials--link"><i class="fab fa-stack-overflow socials--icon"></i></a></li>
+                </ul>
+            </section>
+    
+            <section class="email sidebar--fade-in">
+                <a href="mailto:vissers2000@gmail.com" class="email__link">vissers2000@gmail.com</a>
+            </section>
+        </main>
+
+        <!-- Linking to own JavaScript -->
+        <script src="assets/script/main.js"></script>
+        <script src="assets/script/fadein.js"></script>
+    </body>
+</html>

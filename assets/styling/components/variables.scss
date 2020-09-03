@@ -1,0 +1,46 @@
+// SCSS Variables files 
+
+// 
+// Colors
+//
+// Color palette colors
+$blue: rgb(26, 165, 239); // Main
+$periwinkle: rgb(204, 214, 235); // Title color
+$silver: rgb(179, 179, 179); // Text color
+$grey: rgb(128, 128, 128); // Second text
+$gunmetal: rgb(33, 43, 48); // Background mobile navbar
+$black: rgb(21, 27, 30); // Background
+
+// Background colors
+$backgroundWhite: rgb(247, 248, 250);
+
+// feedback colors
+$feedbackGood:  rgb(40, 167, 69);
+$feedbackBad:  rgb(220, 53, 69);
+
+
+//
+// Fonts
+//
+// Text fonts 
+$textFont: 'Roboto', sans-serif;
+$titleFont: 'Roboto Mono', monospace;
+
+// Font sizes
+$fontSizeSmall: 1.4rem;
+$fontSizeNormal: 1.6rem;
+$fontSizeLarge: 2rem;
+$fontSizeSubtitle: 2.4rem;
+$fontSizeTitle: 3.2rem;
+
+// 
+// Breakpoints
+//
+// Small devices (landscape phones, 576px and up)
+$media-breakpoint-up-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$media-breakpoint-up-md: 768px;
+// Large devices (desktops, 992px and up)
+$media-breakpoint-up-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$media-breakpoint-up-xl: 1200px;

@@ -1,0 +1,66 @@
+@import '../components/variables.scss';
+@import '../components/mixins.scss';
+
+/* Archive section */
+.archive {
+    @include mainSection;
+    justify-items: center;
+    min-height: calc(100vh - 10rem);
+    width: 100%;
+    max-width: 100rem;
+}
+
+/* Archive section wrapper */
+.archive__wrapper {
+    width: 100%;
+    padding-top: 10rem;
+}
+
+/* Archive title */
+.archive__title {
+    @include heroTitle;
+    color: $periwinkle;
+}
+
+/* Archive subtitle */
+.archive__subtitle {
+    color: $blue;
+    font-family: $titleFont;
+    font-size: $fontSizeNormal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 2rem;
+}
+
+/* Archive table container */
+.archive__table {
+    margin-top: 10rem;
+}
+
+@media only screen and (min-width: $media-breakpoint-up-sm) {
+    /* Making the title bigger */
+    .archive__title {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-md) {
+    /* Making the title bigger */
+    .archive__title {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-lg) {
+    /* Making the title bigger */
+    .archive__title {
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-xl) {
+    /* Making the title bigger */
+    .archive__title {
+        font-size: 8rem;
+    }
+}

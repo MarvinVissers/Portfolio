@@ -1,0 +1,112 @@
+// Minxin for items in the main grid
+@mixin mainGridSection($order) {
+    flex-direction: column;
+    order: $order;
+}
+
+// Mixin for the a basic section on the home page
+@mixin mainSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Mixin for the buttons links
+@mixin buttonLink {
+    color: $blue;
+    line-height: 1;
+    text-decoration: none;
+    border: 0.1rem solid $blue;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+// Mixin for the button links on hover
+@mixin buttonLinkHover {
+    color: $blue;
+    text-decoration: none;
+}
+
+// Mixin for hero title
+@mixin heroTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+// Mixin for the sections titles
+@mixin sectionTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $periwinkle;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 1rem 0 4rem;
+}
+
+// Mixin for the number before the title
+@mixin titleNumber($number) {
+    content: $number;
+    text-align: right;
+    color: $blue;
+    font-size: inherit;
+    font-family: $titleFont;
+    margin-right: 1rem;
+}
+
+// Mixin for the line after the title
+@mixin titleLine {
+    content: '';
+    position: relative;
+    display: block;
+    height: 0.1rem;
+    width: 30rem;
+    background-color: $gunmetal;
+    margin-left: 2rem;
+}
+
+// Mixin for the custom marker of ul lists
+@mixin ulMarker($fontSize) {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: $blue;
+    font-size: $fontSize;
+    line-height: 1.5;
+}
+
+// Mixin for a normal text link
+@mixin textLink {
+    display: inline-block;
+    color: $blue;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+// Mixin for the line under the text link
+@mixin textLinkAfter {
+    content: '';
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0.1rem;
+    background-color: $blue;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    opacity: 0.5;
+}
+
+// Mixin for the hover over the text link
+@mixin textLinkHover {
+    color: $blue;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+// Mixin for the after when user hover over the text link
+@mixin textLinkHoverAfter {
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Basic table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Basic table row styling */
+.table__row {
+    border: none;
+    transition: all 0.25s ease-in;
+}
+
+.table__row:hover,
+.table__row:focus {
+    background-color: $gunmetal;
+}
+
+/* Table head styling */
+.table .table__head {
+    color: $silver;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1.5;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: default;
+}
+
+/* Table data styling */
+.table .table__data {
+    color: $grey;
+    font-family: $textFont;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+    padding: 1.5rem 2rem 1rem;
+    border: none;   
+    cursor: default; 
+}
+
+/* Table column year */
+.table .table--year {
+    width: 10%;
+    color: $blue;
+    font-family: $titleFont;
+}
+
+/* Table column title */
+.table .table--title {
+    color: $periwinkle;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Table column company */
+.table .table--company {
+    width: 15%;
+    font-size: 1.8rem;
+}
+
+/* Table comumn technologies */
+.table .table--technologies {
+    font-family: $titleFont;
+    font-size: 1.2rem;
+}
+
+/* Table column link */
+.table .table--link {
+    width: auto;
+}
+
+/* Table icon styling */
+.table--icon {
+    color: $grey;
+    font-size: 2rem;
+    transition: all 0.25s ease-in;
+}
+
+.table--icon:hover,
+.table--icon:focus {
+    color: $blue;
+}
+
+/* Hiding items on mobile */
+.mobile--hide {
+    display: none;
+}
+
+@media only screen and (min-width: $media-breakpoint-up-sm) {
+    /* Making the font size of company bigger */
+    .table .table--title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-md) {
+    /* Showing items with mobile--hide */
+    .mobile--hide {
+        display: table-cell;
+    }
+}

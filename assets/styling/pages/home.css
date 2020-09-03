@@ -1,0 +1,1435 @@
+@charset "UTF-8";
+/* 
+ * Styling for the introduction section 
+ */
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: calc(100vh - 7.5rem);
+}
+
+/* Hero container */
+.hero__wrapper {
+  width: 100%;
+}
+
+/* Hero title */
+.hero__start {
+  color: #1aa5ef;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  margin: 0 0 2rem 0.3rem;
+}
+
+/* Hero name */
+.hero__name {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ccd6eb;
+  margin: 0;
+}
+
+/* Hero subtitle */
+.hero__subtitle {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #b3b3b3;
+  margin: 0 0 1rem;
+}
+
+/* Hero introduction */
+.hero__introduction {
+  width: 100%;
+  max-width: 50rem;
+  font-size: 1.8rem;
+  margin: 2.5rem 0 0;
+}
+
+/* Contact button */
+.hero__contact {
+  color: #1aa5ef;
+  line-height: 1;
+  text-decoration: none;
+  border: 0.1rem solid #1aa5ef;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  padding: 1.25em 1.75em;
+  margin-top: 5rem;
+  display: inline-block;
+}
+
+.hero__contact:hover {
+  color: #1aa5ef;
+  text-decoration: none;
+}
+
+/* 
+ * About me section 
+ */
+.about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100rem;
+  padding-top: 15rem;
+}
+
+/* About me container */
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* About me title */
+.about__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0 4rem;
+  white-space: nowrap;
+}
+
+.about__title::before {
+  content: "01.";
+  text-align: right;
+  color: #1aa5ef;
+  font-size: inherit;
+  font-family: "Roboto Mono", monospace;
+  margin-right: 1rem;
+}
+
+.about__title::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 0.1rem;
+  width: 30rem;
+  background-color: #212b30;
+  margin-left: 2rem;
+}
+
+/* About me left side (text) */
+.about__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* About me text */
+.about__text {
+  font-size: 1.6rem;
+  margin: 0 0 1.5rem;
+}
+
+/* About me technologies list (Under the text) */
+.technologie__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14rem, 20rem))[2];
+      grid-template-columns: repeat(2, minmax(14rem, 20rem));
+  overflow: hidden;
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: outside none;
+}
+
+/* About me technologies list items */
+.technologie__item {
+  position: relative;
+  color: gray;
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Marker before technologie list item */
+.technologie__item::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #1aa5ef;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Styling for the links in about me */
+.about--link {
+  display: inline-block;
+  color: #1aa5ef;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+/* Line under link, visible on hover */
+.about--link::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background-color: #1aa5ef;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  opacity: 0.5;
+  top: -0.5rem;
+}
+
+/* Hover over about me link */
+.about--link:hover {
+  color: #1aa5ef;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+.about--link:hover::after {
+  width: 100%;
+}
+
+/* About me right side (picture) */
+.about__right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 6rem auto 0;
+}
+
+/* Link of the image in about me */
+.overlay__link {
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling for the square behind the image */
+.overlay__link::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: 0.2rem solid #1aa5ef;
+  z-index: 1;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* Styling of the image in the overlay */
+.overlink__img {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 2;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* Styling of the overlay */
+.overlay--filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 165, 239, 0.5);
+  z-index: 2;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+/* Styling for when the link of the image is hovered over */
+.overlay__link:hover::after,
+.overlay__link:focus::after {
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.overlay__link:hover .overlink__img {
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.overlay__link:hover .overlay--filter {
+  background-color: transparent;
+}
+
+/* 
+ * Work section 
+ */
+.work {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 70rem;
+  padding-top: 15rem;
+}
+
+/* Work container */
+.work__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* Work title */
+.work__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0 4rem;
+}
+
+.work__title::before {
+  content: "02.";
+  text-align: right;
+  color: #1aa5ef;
+  font-size: inherit;
+  font-family: "Roboto Mono", monospace;
+  margin-right: 1rem;
+}
+
+/* Wrapper for the work tabs */
+.work__tabs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 50rem;
+}
+
+/* Work list */
+.work__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 3rem;
+  list-style: outside none none;
+  z-index: 3;
+  overflow-x: scroll;
+}
+
+/* Work list item buttons */
+.work__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.2rem;
+  width: 24rem;
+  color: gray;
+  background-color: transparent;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  padding: 0 2rem;
+  border: none;
+  border-bottom: 0.2rem solid gray;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.work__button:hover,
+.work__button:focus,
+.work__button:active {
+  color: #1aa5ef;
+  background-color: #212b30;
+  outline: currentColor none 0;
+}
+
+/* Styling for span of the active work item */
+#item-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 0.2rem;
+  height: 4.2rem;
+  border-radius: 0.3rem;
+  background-color: #1aa5ef;
+  -webkit-transition: -webkit-transform 0.25s ease-in;
+  transition: -webkit-transform 0.25s ease-in;
+  transition: transform 0.25s ease-in;
+  transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+  z-index: 10;
+}
+
+#item-active-mobile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 24rem;
+  height: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: #1aa5ef;
+  -webkit-transition: -webkit-transform 0.25s ease-in;
+  transition: -webkit-transform 0.25s ease-in;
+  transition: transform 0.25s ease-in;
+  transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+  z-index: 10;
+}
+
+/* Styling for work panel */
+.work__panel {
+  display: none;
+  height: auto;
+  width: 100%;
+  max-width: 50rem;
+  padding-top: 1.2rem;
+  padding-left: 3rem;
+}
+
+/* Styling for active work panels */
+.panel--active {
+  display: unset;
+}
+
+/* Styling for the title of the work panel */
+.panel__title {
+  color: #ccd6eb;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Business part of the work panel title */
+.panel--business {
+  color: #1aa5ef;
+}
+
+/* Time at business of the work panel */
+.panel__time {
+  color: gray;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  margin-bottom: 3rem;
+}
+
+/* Styling for list of tasks I've done at work */
+.panel__list {
+  font-size: 1.8rem;
+  list-style: outside none none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for the list item of the tasks */
+.panel__item {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the marker at the list item of the tasks */
+.panel__item::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #1aa5ef;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* Projects section */
+.projects {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100rem;
+  padding-top: 15rem;
+}
+
+/* Projects wrapper */
+.projects__wrapper {
+  width: 100%;
+}
+
+/* Projects title */
+.projects__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0 4rem;
+  white-space: nowrap;
+}
+
+.projects__title::before {
+  content: "03.";
+  text-align: right;
+  color: #1aa5ef;
+  font-size: inherit;
+  font-family: "Roboto Mono", monospace;
+  margin-right: 1rem;
+}
+
+.projects__title::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 0.1rem;
+  width: 30rem;
+  background-color: #212b30;
+  margin-left: 2rem;
+}
+
+/* Styling for the featured projects */
+.project__featured {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7rem;
+}
+
+/* Styling for the featured project information */
+.project__information {
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / -1 / 7;
+  grid-column: 1 / -1;
+  padding: 4rem 4rem 3rem;
+}
+
+/* Even featured project information */
+.project__featured:nth-child(even) .project__information {
+  grid-column: 1 / -1;
+  text-align: right;
+}
+
+/* Title featured project */
+.project__status {
+  position: relative;
+  color: #1aa5ef;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+/* Title of the featured project */
+.project__title {
+  position: relative;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  margin: 0 0 2rem;
+  z-index: 2;
+}
+
+.project__title a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.project__title a:hover {
+  color: #1aa5ef;
+  text-decoration: none;
+}
+
+/* Styling for the project description */
+.project__discription {
+  position: relative;
+  color: #b3b3b3;
+  font-size: 1.6rem;
+  background-color: transparent;
+  padding: 2rem 0;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 2;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* Styling for the technologie list of the project */
+.project-technologie {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 2.5rem 0 1rem;
+  list-style: outside none none;
+  z-index: 2;
+}
+
+/* Even featured project technologies list */
+.project__featured:nth-child(even) .project-technologie {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* Project technologie list items */
+.project-technologie__item {
+  color: #b3b3b3;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  margin-bottom: 0.7rem;
+  white-space: nowrap;
+}
+
+/* Even featured project technologies list item */
+.project__featured:nth-child(even) .project-technologie__item {
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
+/* Styling for links to the project */
+.project__links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b3b3b3;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* Even featured project links */
+.project__featured:nth-child(even) .project__links {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 0;
+  margin-right: -1rem;
+}
+
+/* Styling for links icons to the project */
+.project__link {
+  position: relative;
+  display: inline-block;
+  color: #b3b3b3;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.project__link:hover,
+.project__link:focus {
+  color: #1aa5ef;
+}
+
+/* Styling for the featured project picture */
+.project__tumbnail {
+  position: relative;
+  grid-area: 1 / 6 / -1 / -1;
+  grid-column: 1 / -1;
+  display: inline-block;
+  height: 100%;
+  border-radius: 0.4rem;
+  background-color: #212b30;
+  -webkit-box-shadow: rgba(2, 12, 27, 0.7) 0 1rem 3rem -1.5rem;
+          box-shadow: rgba(2, 12, 27, 0.7) 0 1rem 3rem -1.5rem;
+  z-index: 1;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* Even featured project picture */
+.project__featured:nth-child(even) .project__tumbnail {
+  grid-column: 1 / -1;
+}
+
+/* Styling for the featured project image wrapper */
+.project__img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.3rem;
+  mix-blend-mode: multiply;
+  -webkit-filter: grayscale(100%) contrast(1) brightness(80%);
+          filter: grayscale(100%) contrast(1) brightness(80%);
+}
+
+/* Styling for the image overlay */
+.project__overlay {
+  width: 100%;
+}
+
+/* Choosing a diffrent padding for each picture so they have keep their own dimensions */
+#picture-project1 {
+  padding-bottom: 48.513%;
+  /* (522 / 1076) * 100% */
+}
+
+#picture-project2 {
+  padding-bottom: 49.3699%;
+  /* (666 / 1349) * 100% */
+}
+
+#picture-project3 {
+  padding-bottom: 56.3%;
+  /* (563 / 1000) * 100% */
+}
+
+/* Styling for the image itself */
+.project__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: cover cover;
+     object-position: cover cover;
+  opacity: 1;
+}
+
+/* Extra projects section */
+.extra-projects {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100rem;
+  padding-top: 15rem;
+}
+
+/* Projects wrapper */
+.extra-projects__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+/* Projects title */
+.extra-projects__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Link to project archive */
+.extra-projects__link {
+  display: inline-block;
+  color: #1aa5ef;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Link to archive stripe visible on hover */
+.extra-projects__link::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background-color: #1aa5ef;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  opacity: 0.5;
+}
+
+/* Making sure the color stays the same and the underline is not shown */
+.extra-projects__link:hover {
+  color: #1aa5ef;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+/* Showing my own underine */
+.extra-projects__link:hover::after {
+  width: 100%;
+}
+
+/* Extra projects grid */
+.projects-grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+/* Extra projects grid item */
+.projects-grid__item {
+  visibility: visible;
+  cursor: default;
+}
+
+/* Extra projects grid item wrapper */
+.projects-grid__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  background-color: #212b30;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* Extra projects grid item header */
+.projects-grid__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Extra projects grid item map icon */
+.projects-grid__map-icon .projects-grid--icon {
+  font-size: 5rem;
+}
+
+/* Extra projects grid item likns */
+.projects-grid__links {
+  margin-right: -1rem;
+}
+
+/* Extra projects grid item link icons */
+.projects-grid--icon {
+  color: #1aa5ef;
+  font-size: 2rem;
+}
+
+/* Extra projects grid item title */
+.projects-grid__title {
+  color: #ccd6eb;
+  font-size: 2.2rem;
+  margin: 0 0 1rem;
+}
+
+/* Extra projects grid item description */
+.projects-grid__description {
+  margin: 0 0 1.5rem;
+}
+
+/* Extra projects grid technologies list */
+.projects-grid__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: outside none none;
+}
+
+.projects-grid__list-item {
+  color: gray;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  margin-right: 1.5rem;
+}
+
+/* Contact section */
+.contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 60rem;
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+}
+
+/* Contact wrapper */
+.contact__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* Contact title */
+.contact__title {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #1aa5ef;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+.contact__title::before {
+  content: "04.";
+  text-align: right;
+  color: #1aa5ef;
+  font-size: inherit;
+  font-family: "Roboto Mono", monospace;
+  margin-right: 1rem;
+}
+
+/* Contact subtitle */
+.contact__subtitle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #ccd6eb;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 0 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Contact text */
+.contact__text {
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+/* Styling for the contact section */
+.contact__link {
+  color: #1aa5ef;
+  line-height: 1;
+  text-decoration: none;
+  border: 0.1rem solid #1aa5ef;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  padding: 1.25em 1.75em;
+  margin-top: 5rem;
+  display: inline-block;
+}
+
+.contact__link:hover {
+  color: #1aa5ef;
+  text-decoration: none;
+}
+
+/* Website responsive maken */
+@media only screen and (min-width: 576px) {
+  /* Changing fonts sizes of the hero section */
+  /* Hero name */
+  .hero__name {
+    font-size: 5rem;
+  }
+  /* Hero subtitle */
+  .hero__subtitle {
+    font-size: 5rem;
+  }
+  /* Hero introduction */
+  .hero__introduction {
+    font-size: 1.9rem;
+  }
+  /* Making sure that the title is on 1 line */
+  .about__title {
+    font-size: 2.6rem;
+    white-space: nowrap;
+  }
+  /* Making the about me text larger */
+  .about__text {
+    font-size: 1.8rem;
+  }
+  /* Making sure that the title is on 1 line */
+  .work__title {
+    font-size: 2.6rem;
+    white-space: nowrap;
+  }
+  /* Adding the stripe after the work title, doesnt fit on mobile */
+  .work__title::after {
+    content: '';
+    position: relative;
+    display: block;
+    height: 0.1rem;
+    width: 30rem;
+    background-color: #212b30;
+    margin-left: 2rem;
+  }
+  /* Setting the work tabs next to the panel */
+  .work__tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* making sure the tab list is not scrollable */
+  .work__list {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: unset;
+    overflow-x: hidden;
+  }
+  /* Chaning the button for tablet and bigger */
+  .work__button {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    width: 100%;
+    border-bottom: none;
+    border-left: 0.2rem solid gray;
+    text-align: unset;
+  }
+  /* Changing from the mobile item acitve to tablet/desktop item active */
+  #item-active {
+    display: block;
+  }
+  #item-active-mobile {
+    display: none;
+  }
+  /* Making the projects title bigger */
+  .projects__title {
+    font-size: 2.6rem;
+  }
+  /* Increasing the margin bottom of the featured projects */
+  .project__featured {
+    margin-bottom: 10rem;
+  }
+  /* Removing the padding on bigger screens */
+  .project__information {
+    padding: unset;
+  }
+  /* Setting the information columns to 7/12 of the grid */
+  .project__information {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+  }
+  /* Setting the project information to the right */
+  .project__featured:nth-child(even) .project__information {
+    grid-column: 7 / -1;
+  }
+  /* Making the featured project title bigger */
+  .project__title {
+    font-size: 2.8rem;
+  }
+  /* Styling for the project information next to the project */
+  .project__discription {
+    background-color: #212b30;
+    padding: 2.5rem;
+    -webkit-box-shadow: rgba(2, 12, 27, 0.7) 0 1rem 3rem -1.5rem;
+            box-shadow: rgba(2, 12, 27, 0.7) 0 1rem 3rem -1.5rem;
+  }
+  /* Changing the technologie item style */
+  .project-technologie__item {
+    color: gray;
+    margin-right: 2rem;
+  }
+  /* Setting the image right of the project information */
+  .project__tumbnail {
+    grid-column: 6 / -1;
+    background-color: #1aa5ef;
+    opacity: unset;
+  }
+  /* Setting the image left of the project information */
+  .project__featured:nth-child(even) .project__tumbnail {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / 8;
+  }
+  /* Removing the blue background on hover */
+  .project__tumbnail:hover,
+  .project__tumbnail:focus {
+    background: transparent none repeat scroll 0% 0%;
+    -webkit-box-shadow: rgba(2, 12, 27, 0.7) 0 2rem 3rem -1.5rem;
+            box-shadow: rgba(2, 12, 27, 0.7) 0 2rem 3rem -1.5rem;
+  }
+  /* Changing the filter on bigger screens */
+  .project__img-wrapper {
+    -webkit-filter: grayscale(100%) contrast(1) brightness(90%);
+            filter: grayscale(100%) contrast(1) brightness(90%);
+  }
+  /* Removing the image filter on hover */
+  .project__tumbnail:hover .project__img-wrapper,
+  .project__tumbnail:focus .project__img-wrapper {
+    -webkit-filter: unset;
+            filter: unset;
+  }
+  /* Making the extra projects title bigger */
+  .extra-projects__title {
+    font-size: 2.6rem;
+  }
+  /* Making the contact subtitle bigger */
+  .contact__subtitle {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Changing fonts sizes of the hero section */
+  /* Hero name */
+  .hero__name {
+    font-size: 6rem;
+  }
+  /* Hero subtitle */
+  .hero__subtitle {
+    font-size: 6rem;
+  }
+  /* Hero introduction */
+  .hero__introduction {
+    font-size: 2rem;
+  }
+  /* Reducing the padding on the about me section */
+  .about {
+    padding-top: 7.5rem;
+  }
+  /* Setting about left and right next together */
+  .about__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* Making the about me title bigger */
+  .about__title {
+    font-size: 2.8rem;
+  }
+  /* Making the text side of about me smaller */
+  .about__left {
+    width: 50%;
+    max-width: 50rem;
+  }
+  /* Aligning the about me picture at the top of the about me text */
+  .about__right {
+    top: 9.25rem;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    width: 50%;
+    margin: unset;
+  }
+  /* Reducing the padding top of the work section */
+  .work {
+    padding-top: 7.5rem;
+  }
+  /* Making the work title bigger */
+  .work__title {
+    font-size: 2.8rem;
+  }
+  /* Making the projects title bigger */
+  .projects__title {
+    font-size: 2.8rem;
+  }
+  /* Making the project thumbnail fit the whole object */
+  .project__tumbnail {
+    height: unset;
+  }
+  .project__img-wrapper {
+    -o-object-fit: unset;
+       object-fit: unset;
+    height: unset;
+    width: 100%;
+  }
+  /* Reducing the padding top of the extra projects section */
+  .extra-projects {
+    padding-top: 7.5rem;
+  }
+  /* Making the extra projects title bigger */
+  .extra-projects__title {
+    font-size: 2.8rem;
+  }
+  /* Making the contact subtitle bigger */
+  .contact__subtitle {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Changing fonts sizes of the hero section */
+  /* Hero name */
+  .hero__name {
+    font-size: 7rem;
+  }
+  /* Hero subtitle */
+  .hero__subtitle {
+    font-size: 7rem;
+  }
+  /* Making the about me title bigger */
+  .about__title {
+    font-size: 3rem;
+  }
+  /* Making the about text bigger */
+  .about__left {
+    width: 60%;
+  }
+  /* Making the about picture smaller */
+  .about__right {
+    width: 40%;
+  }
+  /* Making the work title bigger */
+  .work__title {
+    font-size: 3rem;
+  }
+  /* Making the projects title bigger */
+  .projects__title {
+    font-size: 3rem;
+  }
+  /* Making the project description bigger */
+  .project__discription {
+    font-size: 1.8rem;
+  }
+  /* Making the extra projects title bigger */
+  .extra-projects__title {
+    font-size: 3rem;
+  }
+  /* Making the contact subtitle bigger */
+  .contact__subtitle {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Changing fonts sizes of the hero section */
+  /* Hero name */
+  .hero__name {
+    font-size: 8rem;
+  }
+  /* Hero subtitle */
+  .hero__subtitle {
+    font-size: 8rem;
+  }
+  /* Making the abpit me title bigger */
+  .work__title {
+    font-size: 3.2rem;
+  }
+  /* Making the about text bigger */
+  .about__left {
+    font-size: 2rem;
+    padding-right: unset;
+  }
+  /* Making the work title bigger */
+  .work__title {
+    font-size: 3.2rem;
+  }
+  /* Making the projects title bigger */
+  .projects__title {
+    font-size: 3.2rem;
+  }
+  /* Making the extra projects title bigger */
+  .extra-projects__title {
+    font-size: 3.2rem;
+  }
+  /* Making the contact subtitle bigger */
+  .contact__subtitle {
+    font-size: 3.2rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

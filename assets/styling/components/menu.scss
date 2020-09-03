@@ -1,0 +1,188 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Header styling */
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background-color: $black;
+    transition: all 0.2s ease-in;
+    z-index: 100;
+}
+
+/* Removing the navbar on scroll down */
+.navbar--hide {
+    transform: translateY(-8.5rem);
+}
+
+/* Header box-shadow when it is not fixed */
+.navbar--shadow {
+    box-shadow: 0px 0px 0.5rem $grey;
+}
+
+/* Navbar styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0;
+}
+
+/* Hamburger navbar wrapper */
+.navbar__handler {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+}
+
+/* Basic hamburger navbar styling */
+.navbar--bar {
+    background-color: $blue;
+    margin: 0.25rem 0 0.5rem auto;
+    max-width: 2rem;
+}
+
+/* Making every bar a bit smaller */
+#navbar1 {
+    padding: 0.125rem 1.5rem;
+}
+
+#navbar2 {
+    padding: 0.125rem 1.25rem;
+}
+
+#navbar3 {
+    padding: 0.125rem 1rem;
+}
+
+/* Mobile sidebar with nav ul */
+.mobile__wrapper {
+    position: absolute;
+    top: 0;
+    right: calc(-60vw - 15px);
+    background-color: $gunmetal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    transition: all 0.3s ease-in;
+}
+
+/* Mobile sidebar active */
+.mobile__wrapper--active {
+    right: calc(0% - 15px);
+}
+
+/* The navbar list */
+.navbar__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Navbar items */
+.navbar__item {
+    counter-increment: item 1;
+    text-align: center;
+    margin: 1.25rem 0.5rem;
+}
+
+/* Giving the navbar link more margin on mobile */
+#navbar-item-cv-link {
+    margin-top: 2.5rem;
+}
+
+/* Navbar links */
+.navbar--link, 
+.navbar--link:visited {
+    font-size: 2rem;
+    color: $silver;
+    transition: all ease-in 0.2s;
+    transition-delay: 0;
+}
+
+.navbar--link::before {
+    content: "0" counter(item) ".";
+    text-align: right;
+    color: $blue;
+    font-size: 1.6rem;
+    font-family: $titleFont;
+}
+
+.navbar--link:hover, 
+.navbar--link:active, 
+.navbar--link:focus {
+    color: $blue;
+    text-decoration: none;
+}
+
+/* Styling the resume link */
+#cv-link {
+    @include buttonLink();
+    position: relative;
+    top: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+/* Removing the counter before the link */
+#cv-link::before {
+    display: none;
+}
+
+/* Cross to close mobile navbar */
+.navbar__close {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+/* Responsiveness of the menu */
+@media only screen and (min-width: $media-breakpoint-up-md) {
+    /* Removing the hamburger menu */
+    .navbar__handler {
+        display: none;
+    }
+
+    /* Changing the mobile wrapper */
+    .mobile__wrapper{
+        position: relative;
+        top: unset;
+        right: unset;
+        background-color: unset;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Making the navbar list horizontal */
+    .navbar__list {
+        display: flex;
+    }
+
+    /* Chaning the margin of the navbar list items */
+    .navbar__item {
+        margin: 0.5rem 1.25rem;
+    }
+
+    /* Removing the extra margin */
+    #navbar-item-cv-link {
+        margin: 0.5rem 1.25rem;
+    }
+
+    /* Changing the font size of the navbar links */
+    .navbar--link {
+        font-size: 1.6rem;
+    }
+
+    /* Removing the navbar closing button */
+    .navbar__close {
+        display: none;
+    }
+}

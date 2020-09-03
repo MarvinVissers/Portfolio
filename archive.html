@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <!-- Meta tags, information for the browser -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Hallo, ik ben Marvin Vissers en dit is een lijst met een aantal projecten waar ik aan gewerkt heb. ">
+        <meta name="keywords" content="Marvin, Vissers, Marvin Vissers, Student, Student Informatica, Informatica, ICT, Front-end, Back-end, Full Stack">
+        <meta name="author" content="Marvin Vissers">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Marvin Vissers | Student Informatica</title>
+
+        <!--Preloading all important things-->
+        <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style">
+        <link rel="preload" href="assets/styling/main.css" as="style">
+        <link rel="preload" href="assets/styling/pages/archive.css" as="style">
+
+        <!-- Linking to materialize CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+        <!-- Linking to own CSS -->
+        <link rel="stylesheet" href="assets/styling/main.css">
+        <link rel="stylesheet" href="assets/styling/pages/archive.css">
+
+        <!-- linking to favicon -->
+        <link rel="icon" href="assets/images/favicon.png">
+
+        <!--Linking to custom font Roboto and Roboto Mono -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+        <!-- Linking to icons -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <div class="container-fluid">
+                <nav class="navbar">
+                    <!-- Hamburger menu -->
+                    <div class="navbar__handler" onclick="toggleMobileNavbar()">
+                        <span class="navbar--bar" id="navbar1"></span>
+                        <span class="navbar--bar" id="navbar2"></span>
+                        <span class="navbar--bar" id="navbar3"></span>
+                    </div>
+
+                    <div class="mobile__wrapper" id="mobile-navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item"><a href="index#over-mij" class="navbar--link">Over mij</a></li>
+                            <li class="navbar__item"><a href="index#werk" class="navbar--link">Ervaring</a></li>
+                            <li class="navbar__item"><a href="index#projecten" class="navbar--link">Werk</a></li>
+                            <li class="navbar__item"><a href="index#contact" class="navbar--link">Contact</a></li>
+                            <li class="navbar__item" id="navbar-item-cv-link"><a href="assets/uploads/CV_Marvin_Vissers.pdf" id="cv-link" class="navbar--link" target="_blank" rel="noopener noreferrer">CV</a></li>
+                        </ul>
+
+                        <!-- Closing button mobile navbar -->
+                        <span class="navbar__close" onclick="toggleMobileNavbar()">&times;</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <article class="content">
+                <section class="archive section--fade-in">
+                    <div class="archive__wrapper">
+                        <h4 class="archive__title">Archive</h4>
+
+                        <h5 class="archive__subtitle">Een lijst met projecten die ik gemaakt hebt.</h5>
+
+                        <div class="archive__table">
+                            <table class="table">
+                                <thead>
+                                    <tr class="table__row"> <th class="table__head">Jaar</th> <th class="table__head">Titel</th> <th class="table__head mobile--hide">Gemaakt bij</th> <th class="table__head mobile--hide">Gemaakt met</th> <th class="table__head">Link</th> </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr class="table__row"> <td class="table__data table--year">2020</td> <td class="table__data table--title">Encryptie programma</td> <td class="table__data table--company mobile--hide">Associate Degree Roosendaal</td> <td class="table__data table--technologie mobile--hide">Java</td> <td class="table__data table--link"><a href="https://github.com/MarvinVissers/EncryptieProgrammaSecurity" target="_blank" rel="noopener noreferrer"><i class="fab fa-github table--icon"></i></a></td></tr>
+                                    <tr class="table__row"> <td class="table__data table--year">2019</td> <td class="table__data table--title">De Koe</td> <td class="table__data table--company mobile--hide">Monkeys and Bananas</td> <td class="table__data table--technologie mobile--hide">Wordpress, PHP, JavaScript, CSS</td> <td class="table__data table--link"><a href="http://www.dekoe.nl/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt table--icon"></i></a></td> </tr>
+                                    <tr class="table__row"> <td class="table__data table--year">2019</td> <td class="table__data table--title">In-Loco</td> <td class="table__data table--company mobile--hide">Monkeys and Bananas</td> <td class="table__data table--technologie mobile--hide">Wordpress, CSS</td> <td class="table__data table--link"><a href="http://in-loco.nl/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt table--icon"></i></a></td> </tr>
+                                    <tr class="table__row"> <td class="table__data table--year">2019</td> <td class="table__data table--title">Zinvolcoachen</td> <td class="table__data table--company mobile--hide">Monkeys and Bananas</td> <td class="table__data table--technologie mobile--hide">Wordpress, JavaScript, CSS</td> <td class="table__data table--link"><a href="https://zinvolcoachen.nl/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt table--icon"></i></a></td> </tr>
+                                    <tr class="table__row"> <td class="table__data table--year">2018</td> <td class="table__data table--title">Stardust hotel</td> <td class="table__data table--company mobile--hide">Zoomvliet College Roosendaal</td> <td class="table__data table--technologie mobile--hide">PHP, Bootstrap, (S)CSS, HTML, MySQL</td> <td class="table__data table--link"><a href="https://github.com/MarvinVissers/Stardust" target="_blank" rel="noopener noreferrer"><i class="fab fa-github table--icon"></i></a></td> </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <section class="socials sidebar--fade-in">
+                <ul class="socials__list">
+                    <li class="socials__item"><a href="https://github.com/MarvinVissers" class="socials--link"><i class="fab fa-github socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://www.linkedin.com/in/marvinvissers/" class="socials--link"><i class="fab fa-linkedin-in socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://codepen.io/marvinvissers" class="socials--link"><i class="fab fa-codepen socials--icon"></i></a></li>
+                    <li class="socials__item"><a href="https://stackoverflow.com/users/11852362/marvinvissers" class="socials--link"><i class="fab fa-stack-overflow socials--icon"></i></a></li>
+                </ul>
+            </section>
+    
+            <section class="email sidebar--fade-in">
+                <a href="mailto:vissers2000@gmail.com" class="email__link">vissers2000@gmail.com</a>
+            </section>
+        </main>
+
+        <!-- Linking to own JavaScript -->
+        <script src="assets/script/main.js"></script>
+        <script src="assets/script/fadein.js"></script>
+    </body>
+</html>

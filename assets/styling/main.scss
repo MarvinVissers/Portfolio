@@ -1,0 +1,186 @@
+// Importing the variables and funtions
+@import 'components/variables.scss';
+@import 'components/mixins.scss';
+
+/* Basic page styling */
+html, body {
+    position: relative;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    font-size: 0.625em;
+    font-family: $textFont;
+    line-height: 1.5;
+    color: $silver;
+    background-color: $black;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* 
+ * Setting up the main grid 
+ */
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5rem;
+    font-size: $fontSizeNormal;
+    z-index: 1;
+}
+
+/* socials on the left */
+.socials {
+    display: flex;
+    min-width: 7.5rem;
+    width: 100%;
+}
+
+/* list with socials */
+.socials__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 2rem;
+    margin: 0;
+    list-style: none;
+}
+
+/* styling for the social links */
+.socials--link, 
+.socials--link:hover,
+.socials--link:active {
+    color: inherit;
+}
+
+/* styling for the social icons */
+.socials--icon {
+    font-size: 2rem;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+.socials--icon:hover,
+.socials--icon:active {
+    color: $blue;
+    transform: translateY(-0.3rem);
+}
+
+/* Main content in de middle */
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+/* Email on the right */
+.email {
+    display: none;
+}
+
+/* Selection color */
+::-moz-selection {
+    color: $black;
+    background: $blue;
+}
+  
+::selection {
+    color: $black;
+    background: $blue;
+}
+
+// Importing components
+@import 'components/menu.scss';
+@import 'components/table.scss';
+@import 'components/fade-in.scss';
+
+@media only screen and (min-width: $media-breakpoint-up-md) {
+    /* resizing the main grid */
+    .main {
+        flex-direction: row;
+    }
+
+    .socials {
+        width: 10%;
+        @include mainGridSection(1);
+    }
+
+    /* list with socials */
+    .socials__list {
+        position: fixed;
+        bottom: 0;
+        left: 1rem;
+        flex-direction: column;
+        padding: 0;
+        width: 3.5rem;
+    }
+
+    /* Line under the socials */
+    .socials__list::after {
+        content: "";
+        display: block;
+        width: 0.1rem;
+        height: 9rem;
+        margin: 0px auto;
+        background-color: $silver;
+    }
+
+    .content {
+        @include mainGridSection(2);
+        width: 80%;
+        max-width: 160rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Email sidebar */
+    .email {
+        position: fixed;
+        bottom: 0;
+        right: 0rem;
+        display: flex;
+        @include mainGridSection(3);
+        min-width: 7.5rem;
+        width: 10%;
+    }
+
+    /* Line under the email */
+    .email::after {
+        content: "";
+        display: block;
+        width: 0.1rem;
+        height: 9rem;
+        margin: 0px auto;
+        background-color: $silver;
+    }
+
+    /* Styling the email link */
+    .email__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        writing-mode: vertical-rl;
+        margin: 1rem;
+        color: inherit;
+        transition: all 0.2s ease-in;
+    }
+
+    /* Email link hover */
+    .email__link:hover {
+        color: $blue;
+        text-decoration: none;
+        transform: translateY(-0.3rem);
+    }
+}
+
+@media only screen and (min-width: $media-breakpoint-up-lg) {
+    /* Making the list with sociales larger */
+    .socials__list {
+        left: 4rem;
+    }
+
+    /* Making the email larger */
+    .email {
+        right: 4rem;
+    }
+}
