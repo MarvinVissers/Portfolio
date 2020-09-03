@@ -11,4 +11,4 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 # Send user to error 404 page when page does not exist
-ErrorDocument 404 http://localhost:8000/MarvinVissers/page-not-found
+ErrorDocument 404 https://marvinvissers.netlify.app/page-not-found
