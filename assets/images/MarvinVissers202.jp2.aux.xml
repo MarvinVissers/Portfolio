@@ -1,0 +1,30 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="EXIF_ColorSpace">1</MDI>
+    <MDI key="EXIF_DateTime">2020:08:26 19:38:58</MDI>
+    <MDI key="EXIF_DateTimeDigitized">2020:08:26 19:36:35</MDI>
+    <MDI key="EXIF_DateTimeOriginal">2020:08:26 19:36:35</MDI>
+    <MDI key="EXIF_Orientation">1</MDI>
+    <MDI key="EXIF_Software">Windows Photo Editor 10.0.10011.16384</MDI>
+    <MDI key="EXIF_SubSecTime_Digitized">35</MDI>
+    <MDI key="EXIF_SubSecTime_Original">35</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG2000</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG2000</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG2000</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

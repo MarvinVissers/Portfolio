@@ -7,6 +7,14 @@
 function toggleMobileNavbar() {
     // Getting the navbar and overlay
     document.getElementById("mobile-navbar").classList.toggle("mobile__wrapper--active");
+    document.getElementById("mobile-overlay").classList.toggle("mobile__overlay--active");
+}
+
+// Function to close navbar on overlay click
+function closeMobileNavbar() {
+    // Getting the navbar and overlay
+    document.getElementById("mobile-navbar").classList.remove("mobile__wrapper--active");
+    document.getElementById("mobile-overlay").classList.remove("mobile__overlay--active");
 }
 
 // Function to hide navbar on scrolldown and show on scroll up

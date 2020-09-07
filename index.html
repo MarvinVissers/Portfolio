@@ -55,6 +55,8 @@
                         <!-- Closing button mobile navbar -->
                         <span class="navbar__close" onclick="toggleMobileNavbar()">&times;</span>
                     </div>
+
+                    <div class="mobile__overlay" id="mobile-overlay" onclick="closeMobileNavbar();"></div>
                 </nav>
             </div>
         </header>
@@ -109,9 +111,12 @@
                         <div class="about__right">
                             <a href="https://github.com/MarvinVissers" class="overlay__link" target="_blank" rel="noopener noreferrer">
                                 <picture>
-                                    <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jpg">
-                                    <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg">
-                                    <img src="assets/images/MarvinVissers202.jpg" class="overlink__img" alt="Fotootje van mij">
+                                    <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jpg" type="image/jpg">
+                                        <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jp2" type="image/jp2">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg" type="image/jpg">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jp2" type="image/jp2">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg" type="image/jpg">
+                                        <img src="assets/images/MarvinVissers202.jp2" class="overlink__img" alt="Fotootje van mij">
                                 </picture>
                                 <div class="overlay--filter"></div>
                             </a>
@@ -130,7 +135,6 @@
                                 <li class="work__item"><button class="work__button" id="tab-2" role="tab" tabindex="-1" onclick="openWorkPanel(2)">Stage Monkeys and Bananas</button></li>
                                 <li class="work__item"><button class="work__button" id="tab-3" role="tab" tabindex="-1" onclick="openWorkPanel(3)">V.V. Virtus</button></li>
                                 <li class="work__item"><button class="work__button" id="tab-4" role="tab" tabindex="-1" onclick="openWorkPanel(4)">Stage Blokweg</button></li>
-                                <!-- <li class="work__item"><button class="work__button" id="tab-5" role="tab" tabindex="-1" onclick="openWorkPanel(5)">Able2</button></li> -->
                                 <span id="item-active"></span>
                                 <span id="item-active-mobile"></span>
                             </ul>
@@ -200,19 +204,6 @@
                                     </ul>
                                 </div>
                             </div>
-        
-                            <!-- <div class="work__panel" id="workpanel5">
-                                <div class="panel__wrapper">
-                                    <h4 class="panel__title"><span>Magazijn Medewerker</span> <span class="panel--business">@ Able2</span></h4>
-                                    <h5 class="panel__time">mei. 2015 - sep. 2018</h5>    
-
-                                    <ul class="panel__list">
-                                        <li class="panel__item">Orders klaargezet en ingepakt voor klanten. </li>
-                                        <li class="panel__item">Voorraden tellen. </li>
-                                        <li class="panel__item">Inkomende orders controleren. </li>
-                                    </ul>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </section>
@@ -247,8 +238,10 @@
                             <a href="https://github.com/MarvinVissers/BrandweerInside" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.png">
-                                        <img src="assets/images/brandweer-inside1076X522.png" class="project__img" alt="Foto van project Brandweer Inside">
+                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.png" type="image/png">
+                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.jp2" type="image/jp2">
+                                        <source srcset="assets/images/brandweer-inside1076X522.png" type="image/png">
+                                        <img src="assets/images/brandweer-inside1076X522.jp2" class="project__img" alt="Foto van project Brandweer Inside">
                                     </picture>
                                     <div class="project__overlay" id="picture-project1"></div>
                                 </div>
@@ -280,8 +273,10 @@
                             <a href="https://www.presser.nl/" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:1000px)" srcset="assets/images/presser1349X666.png">
-                                        <img src="assets/images/presser1349X666.png" class="project__img" alt="Foto van werk pagina presser.nl">
+                                        <source media="(min-width: 1000px)" srcset="assets/images/presser1349X666.png" type="image/png">
+                                        <source media="(min-width:1000px)" srcset="assets/images/presser1349X666.jp2" type="image/jp2">
+                                        <source srcset="assets/images/presser1349X666.png" type="image/png">
+                                        <img src="assets/images/presser1349X666.jp2" class="project__img" alt="Foto van werk pagina presser.nl">
                                     </picture>
                                     <div class="project__overlay" id="picture-project2"></div>
                                 </div>
@@ -314,9 +309,12 @@
                             <a href="https://github.com/MrDutchie00/onBoarding" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.png">
-                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.png">
-                                        <img src="assets/images/onboarding700X394.png" class="project__img" alt="Foto van de onboarding app. Op de foto zijn de ontdek Roosendaal scherm en Feedback pagina te zien.">
+                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.png" type="image/png">
+                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.jp2" type="image/jp2">
+                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.png" type="image/png">
+                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.jp2" type="image/jp2">
+                                        <source srcset="assets/images/onboarding700X394.png" type="image/png">
+                                        <img src="assets/images/onboarding700X394.jp2" class="project__img" alt="Foto van de onboarding app. Op de foto zijn de ontdek Roosendaal scherm en Feedback pagina te zien.">
                                     </picture>
                                     <div class="project__overlay" id="picture-project3"></div>
                                 </div>

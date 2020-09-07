@@ -1,0 +1,238 @@
+/* Header styling */
+.header {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #151b1e;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 100;
+}
+
+/* Removing the navbar on scroll down */
+.navbar--hide {
+  -webkit-transform: translateY(-8.5rem);
+          transform: translateY(-8.5rem);
+}
+
+/* Header box-shadow when it is not fixed */
+.navbar--shadow {
+  -webkit-box-shadow: 0px 0px 0.5rem gray;
+          box-shadow: 0px 0px 0.5rem gray;
+}
+
+/* Navbar styling */
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 0;
+}
+
+/* Hamburger navbar wrapper */
+.navbar__handler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: auto;
+}
+
+/* Basic hamburger navbar styling */
+.navbar--bar {
+  background-color: #1aa5ef;
+  margin: 0.25rem 0 0.5rem auto;
+  max-width: 2rem;
+}
+
+/* Making every bar a bit smaller */
+#navbar1 {
+  padding: 0.125rem 1.5rem;
+}
+
+#navbar2 {
+  padding: 0.125rem 1.25rem;
+}
+
+#navbar3 {
+  padding: 0.125rem 1rem;
+}
+
+/* Mobile sidebar with nav ul */
+.mobile__wrapper {
+  position: absolute;
+  top: 0;
+  right: calc(-60vw - 15px);
+  background-color: #212b30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: calc(100vh + 8.5rem);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: 50;
+}
+
+/* Mobile sidebar active */
+.mobile__wrapper--active {
+  right: calc(0% - 15px);
+}
+
+/* Styling for the overlay on mobile navbar open */
+.mobile__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: calc(100vh + 8.5rem);
+  margin-left: -15px;
+  z-index: 40;
+  opacity: 0;
+}
+
+/* Setting the overlay active */
+.mobile__overlay--active {
+  display: unset;
+}
+
+/* The navbar list */
+.navbar__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Navbar items */
+.navbar__item {
+  counter-increment: item 1;
+  text-align: center;
+  margin: 1.25rem 0.5rem;
+}
+
+/* Giving the navbar link more margin on mobile */
+#navbar-item-cv-link {
+  margin-top: 2.5rem;
+}
+
+/* Navbar links */
+.navbar--link,
+.navbar--link:visited {
+  font-size: 2rem;
+  color: #b3b3b3;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.navbar--link::before {
+  content: "0" counter(item) ".";
+  text-align: right;
+  color: #1aa5ef;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar--link:hover,
+.navbar--link:active,
+.navbar--link:focus {
+  color: #1aa5ef;
+  text-decoration: none;
+}
+
+/* Styling the resume link */
+#cv-link {
+  color: #1aa5ef;
+  line-height: 1;
+  text-decoration: none;
+  border: 0.1rem solid #1aa5ef;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  position: relative;
+  top: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+/* Removing the counter before the link */
+#cv-link::before {
+  display: none;
+}
+
+/* Cross to close mobile navbar */
+.navbar__close {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+/* Responsiveness of the menu */
+@media only screen and (min-width: 768px) {
+  /* Removing the hamburger menu */
+  .navbar__handler {
+    display: none;
+  }
+  /* Changing the mobile wrapper */
+  .mobile__wrapper {
+    position: relative;
+    top: unset;
+    right: unset;
+    background-color: unset;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    height: auto;
+  }
+  /* Removing the mobile overlay when navbar is open */
+  .mobile__overlay {
+    display: none;
+  }
+  /* Making the navbar list horizontal */
+  .navbar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* Chaning the margin of the navbar list items */
+  .navbar__item {
+    margin: 0.5rem 1.25rem;
+  }
+  /* Removing the extra margin */
+  #navbar-item-cv-link {
+    margin: 0.5rem 1.25rem;
+  }
+  /* Changing the font size of the navbar links */
+  .navbar--link {
+    font-size: 1.6rem;
+  }
+  /* Removing the navbar closing button */
+  .navbar__close {
+    display: none;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
