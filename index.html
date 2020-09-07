@@ -55,6 +55,8 @@
                         <!-- Closing button mobile navbar -->
                         <span class="navbar__close" onclick="toggleMobileNavbar()">&times;</span>
                     </div>
+
+                    <div class="mobile__overlay" id="mobile-overlay" onclick="closeMobileNavbar();"></div>
                 </nav>
             </div>
         </header>
@@ -109,9 +111,12 @@
                         <div class="about__right">
                             <a href="https://github.com/MarvinVissers" class="overlay__link" target="_blank" rel="noopener noreferrer">
                                 <picture>
-                                    <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jp2">
-                                    <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jp2">
-                                    <img src="assets/images/MarvinVissers202.jp2" class="overlink__img" alt="Fotootje van mij">
+                                    <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jpg" type="image/jpg">
+                                        <source media="(min-width:650px)" srcset="assets/images/MarvinVissers684.jp2" type="image/jp2">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg" type="image/jpg">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jp2" type="image/jp2">
+                                        <source media="(min-width:465px)" srcset="assets/images/MarvinVissers404.jpg" type="image/jpg">
+                                        <img src="assets/images/MarvinVissers202.jp2" class="overlink__img" alt="Fotootje van mij">
                                 </picture>
                                 <div class="overlay--filter"></div>
                             </a>
@@ -233,7 +238,9 @@
                             <a href="https://github.com/MarvinVissers/BrandweerInside" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.jp2">
+                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.png" type="image/png">
+                                        <source media="(min-width:1000px)" srcset="assets/images/brandweer-inside1076X522.jp2" type="image/jp2">
+                                        <source srcset="assets/images/brandweer-inside1076X522.png" type="image/png">
                                         <img src="assets/images/brandweer-inside1076X522.jp2" class="project__img" alt="Foto van project Brandweer Inside">
                                     </picture>
                                     <div class="project__overlay" id="picture-project1"></div>
@@ -266,7 +273,9 @@
                             <a href="https://www.presser.nl/" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:1000px)" srcset="assets/images/presser1349X666.jp2">
+                                        <source media="(min-width: 1000px)" srcset="assets/images/presser1349X666.png" type="image/png">
+                                        <source media="(min-width:1000px)" srcset="assets/images/presser1349X666.jp2" type="image/jp2">
+                                        <source srcset="assets/images/presser1349X666.png" type="image/png">
                                         <img src="assets/images/presser1349X666.jp2" class="project__img" alt="Foto van werk pagina presser.nl">
                                     </picture>
                                     <div class="project__overlay" id="picture-project2"></div>
@@ -300,8 +309,11 @@
                             <a href="https://github.com/MrDutchie00/onBoarding" class="project__tumbnail" target="_blank" rel="noopener noreferrer">
                                 <div class="project__img-wrapper">
                                     <picture>
-                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.jp2">
-                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.jp2">
+                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.png" type="image/png">
+                                        <source media="(min-width:768px)" srcset="assets/images/onboarding1000X563.jp2" type="image/jp2">
+                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.png" type="image/png">
+                                        <source media="(min-width:576px)" srcset="assets/images/onboarding-md.jp2" type="image/jp2">
+                                        <source srcset="assets/images/onboarding700X394.png" type="image/png">
                                         <img src="assets/images/onboarding700X394.jp2" class="project__img" alt="Foto van de onboarding app. Op de foto zijn de ontdek Roosendaal scherm en Feedback pagina te zien.">
                                     </picture>
                                     <div class="project__overlay" id="picture-project3"></div>
