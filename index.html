@@ -14,6 +14,7 @@
         <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style">
         <link rel="preload" href="assets/styling/main.css" as="style">
         <link rel="preload" href="assets/styling/pages/home.css" as="style">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
 
         <!-- Linking to materialize CSS -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet"> 
 
         <!-- Linking to icons -->
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -65,7 +66,7 @@
             <article class="content">
                 <section class="hero section--fade-in" id="hero">
                     <div class="hero__wrapper">
-                        <h1 class="hero__start">Hee, ik ben </h1>
+                        <h1 class="hero__start">Hey, ik ben </h1>
                         <h2 class="hero__name">Marvin Vissers.</h2>
                         <h3 class="hero__subtitle">Ik maak graag websites.</h3>
     
@@ -130,16 +131,28 @@
 
                         <div class="work__tabs">
                             <ul class="work__list" role="tablist">
-                                <li class="work__item"><button class="work__button" id="tab-0" role="tab" tabindex="-1" onclick="openWorkPanel(0)">AD Academie</button></li>
-                                <li class="work__item"><button class="work__button" id="tab-1" role="tab" tabindex="-1" onclick="openWorkPanel(1)">Blokweg</button></li>
-                                <li class="work__item"><button class="work__button" id="tab-2" role="tab" tabindex="-1" onclick="openWorkPanel(2)">Stage Monkeys and Bananas</button></li>
-                                <li class="work__item"><button class="work__button" id="tab-3" role="tab" tabindex="-1" onclick="openWorkPanel(3)">V.V. Virtus</button></li>
-                                <li class="work__item"><button class="work__button" id="tab-4" role="tab" tabindex="-1" onclick="openWorkPanel(4)">Stage Blokweg</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-0" role="tab" tabindex="-1" onclick="openWorkPanel(0)">Stage iBiZZ</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-0" role="tab" tabindex="-1" onclick="openWorkPanel(1)">AD Academie</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-1" role="tab" tabindex="-1" onclick="openWorkPanel(2)">Blokweg</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-2" role="tab" tabindex="-1" onclick="openWorkPanel(3)">Stage Monkeys and Bananas</button></li>
+                                <li class="work__item"><button class="work__button" id="tab-3" role="tab" tabindex="-1" onclick="openWorkPanel(4)">V.V. Virtus</button></li>
                                 <span id="item-active"></span>
                                 <span id="item-active-mobile"></span>
                             </ul>
 
                             <div class="work__panel panel--active" id="workpanel0">
+                                <div class="panel__wrapper">
+                                    <h4 class="panel__title"><span>Stage Back-end developer</span> <span class="panel--business">@ Studio iBiZZ</span></h4>
+                                    <h5 class="panel__time">jan. 2021 - heden</h5>
+                                        
+                                    <ul class="panel__list">
+                                        <li class="panel__item">Framework van iBiZZ headless maken door middel van GraphQL.</li>
+                                        <li class="panel__item">Uitleg geven over werking GraphQL.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="work__panel" id="workpanel1">
                                 <div class="panel__wrapper">
                                     <h4 class="panel__title"><span>Promo student</span> <span class="panel--business">@ Associate degree Academie Roosendaal</span></h4>
                                     <h5 class="panel__time">okt. 2019 - heden</h5>
@@ -151,7 +164,7 @@
                                 </div>
                             </div>
         
-                            <div class="work__panel" id="workpanel1">
+                            <div class="work__panel" id="workpanel2">
                                 <div class="panel__wrapper">
                                     <h4 class="panel__title"><span>Medewerker ICT-afdeling</span> <span class="panel--business">@ Blokweg Financieel Adviseurs B.V.</span></h4>
                                     <h5 class="panel__time">jul. 2018 - heden</h5>
@@ -165,7 +178,7 @@
                                 </div>
                             </div>
         
-                            <div class="work__panel" id="workpanel2">
+                            <div class="work__panel" id="workpanel3">
                                 <div class="panel__wrapper">
                                     <h4 class="panel__title"><span>Stage Webmonkey</span> <span class="panel--business">@ Monkeys and Bananas</span></h4>
                                     <h5 class="panel__time">jan. 2019 - mei 2019</h5>
@@ -179,7 +192,7 @@
                                 </div>
                             </div>
         
-                            <div class="work__panel" id="workpanel3">
+                            <div class="work__panel" id="workpanel4">
                                 <div class="panel__wrapper">
                                     <h4 class="panel__title"><span>Vrijwilleger Applicatie beheerder</span> <span class="panel--business">@ V.V. Virtus</span></h4>
                                     <h5 class="panel__time">okt. 2017 - sep. 2019</h5>    
@@ -188,19 +201,6 @@
                                         <li class="panel__item">Onderhouden van de website. </li>
                                         <li class="panel__item">Microsoft Power Point presentaties maken voor in de kantine. </li>
                                         <li class="panel__item">Feedback geven over de website. </li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div class="work__panel" id="workpanel4">
-                                <div class="panel__wrapper">
-                                    <h4 class="panel__title"><span>ICT-afdeling</span> <span class="panel--business">@ Blokweg Financieel Adviseurs B.V.</span></h4>
-                                    <h5 class="panel__time">aug. 2017 - jan. 2018</h5>    
-
-                                    <ul class="panel__list">
-                                        <li class="panel__item">Meehelpen met ontwikkelen van occasionvoorraad.nl. </li>
-                                        <li class="panel__item">Collega's helpen met hardware en software problemen. </li>
-                                        <li class="panel__item">Schrijven van handleidingen voor software en hardware. </li>
                                     </ul>
                                 </div>
                             </div>
